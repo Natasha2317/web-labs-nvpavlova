@@ -133,6 +133,6 @@ img{
     .fa-music{
         color:black;
     }
-    .ball{
-        page-break-before: avoid;
+    .wrapper{
+        display: none;
     }

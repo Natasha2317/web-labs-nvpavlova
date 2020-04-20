@@ -1,0 +1,267 @@
+body {
+    background:  linear-gradient(90deg, #08021a,#313e85) no-repeat;
+}
+.main{
+  display: flex;
+}
+figure {
+    position: relative;
+    transition: .2s;
+}
+.number1{
+    display: block;
+    position: absolute;
+    color: yellow;
+    font-size: 20px;
+    -webkit-animation: x 2.8s linear infinite, y 2.8s ease-in infinite both;
+    animation: x 2.8s linear infinite, y 2.8s ease-in infinite both;
+    animation-delay: 2s;
+}
+.linear i {
+    animation-timing-function: linear;
+}
+.number2{
+    display: block;
+    position: absolute;
+    color: yellow;
+    font-size: 20px;
+    -webkit-animation: x 1.8s linear infinite, y 1.8s ease-in infinite both;
+    animation: x 1.8s linear infinite, y 1.8s ease-in infinite both;
+    animation-delay: 2s;
+}
+@keyframes x{
+    from {
+        left: 800px;
+    }
+    to {
+        left: -200px;
+    }
+}
+@keyframes y{
+    from {
+        top: -100px;
+    }
+    to {
+        top: 545px;
+    }
+}
+.number3{
+    display: block;
+    color: yellow;
+    font-size: 20px;
+    margin: 20px 0 0 30px;
+}
+.number4{
+    display: block;
+    color: yellow;
+    font-size: 20px;
+    margin: 230px 0 0 180px;
+}
+.number5{
+    display: block;
+    color: yellow;
+    font-size: 20px;
+    margin: 30px 0 0 400px;
+}
+.number6{
+    display: block;
+    color: yellow;
+    font-size: 20px;
+    margin: 330px 0 0 -20px;
+}
+.number3:hover, .number4:hover, .number5:hover, .number6:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.sun > img{
+    -webkit-animation: sun 20.7s;
+    animation: sun 20.7s;
+    animation-timing-function: linear;
+    width: 170px;
+    height: 170px;
+    margin-left: 1200px;
+    margin-top: -200px;
+}
+.moon > img{
+  -webkit-animation: moon 22.7s;
+  animation: moon rotate 22.7s;
+  animation-timing-function: linear;
+  margin-left: 1200px;
+  margin-top: -200px;
+}
+.bird{
+    width: 200px;
+    height: 100px;
+}
+.bird5{
+    -webkit-animation: bird5 3.2s;
+    animation: bird5 3.2s;
+    position: relative;
+    margin-left: 1200px;
+    margin-top: -100px;
+    opacity: 1;
+}
+.bird4{
+    -webkit-animation: bird4 3.2s;
+    animation: bird4 3.2s;
+    position: relative;
+    margin-left: 900px;
+    margin-top: -130px;
+    opacity: 1;
+    animation-delay: 3.2s;
+}
+.bird3{
+    -webkit-animation: bird3 3.2s;
+    animation: bird3 3.2s;
+    position: relative;
+    margin-left: 600px;
+    margin-top: -150px;
+    opacity: 1;
+    animation-delay: 6.4s;
+}
+.bird2{
+    -webkit-animation: bird2 3.2s;
+    animation: bird2 3.2s;
+    position: relative;
+    margin-left: 300px;
+    margin-top: -170px;
+    opacity: 1;
+    animation-delay: 9.6s;
+}
+.bird1{
+    -webkit-animation: bird1 3.2s;
+    animation: bird1 3.2s;
+    position: relative;
+    margin-left: 0px;
+    margin-top: -190px;
+    opacity: 1;
+    animation-delay: 12.8s;
+}
+h1{
+  padding: 0;
+  margin-left: 520px;
+  position: relative;
+  transition-property: font-size;
+  transition-duration: 3s;
+  transition-delay: 1s;
+  font-size: 36px;
+  color: lightblue;
+  cursor: pointer;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 0 10px gold;
+}
+h1:hover{
+  transition-property: font-size;
+  transition-duration: 3s;
+  transition-delay: 1s;
+  font-size: 50px;
+}
+@keyframes bird5{
+  0%{
+     opacity: 1;
+   }
+  100%{
+    opacity: 0;
+  }
+}
+.bird5{
+    opacity: 0;
+}
+@keyframes bird4{
+  0%{
+     opacity: 1;
+   }
+  100%{
+    opacity: 0;
+  }
+}
+.bird4{
+    opacity: 0;
+}
+@keyframes bird3{
+  0%{
+     opacity: 1;
+   }
+  100%{
+    opacity: 0;
+  }
+}
+.bird3{
+    opacity: 0;
+}
+@keyframes bird2{
+  0%{
+     opacity: 1;
+   }
+  100%{
+    opacity: 0;
+  }
+}
+.bird2{
+    opacity: 0;
+}
+@keyframes bird1{
+  0%{
+     opacity: 1;
+   }
+  100%{
+    opacity: 0;
+  }
+}
+.bird1{
+    opacity: 0;
+}
+ @keyframes sun{
+  0%{
+     opacity: 1;
+   }
+  10%{
+    opacity: 0.9;
+  }
+  20%{
+    opacity: 0.8;
+  }
+  30%{
+    opacity: 0.7;
+  }
+  40%{
+    opacity: 0.6;
+  }
+  50%{
+    opacity: 0.5;
+   }
+  60%{
+    opacity: 0.4;
+  }
+  70%{
+    opacity: 0.3;
+  }
+  80%{
+    opacity: 0.2;
+  }
+  90%{
+    opacity: 0.1;
+  }
+  100%{
+     opacity: 0;
+   }
+ }
+ .sun > img{
+  opacity: 0;
+}
+@keyframes moon{
+  0%{
+    opacity: 0;
+    transform: rotate(0grad);
+   }
+  100%{
+    opacity: 1;
+    transform: rotate(360grad);
+    transition: width 2s, height 2s;
+  }
+}
+.moon > img{
+  transform: rotate(360grad);
+}

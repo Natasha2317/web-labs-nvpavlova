@@ -107,7 +107,8 @@ footer{
   font-size: 15px;
   font-family: 'Playfair Display SC', serif;
 }
-.product-item:hover,:focus .button {
+.button: hover,
+:focus{
   background: #449b61;
   font-size: 17px;
 }

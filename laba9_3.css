@@ -124,7 +124,8 @@ footer{
     width: 120px;
     height: 50px;
 }
-.product-item:hover,:focus .button {
+.button: hover,
+:focus{
   background: #449b61;
   font-size: 17px;
 }

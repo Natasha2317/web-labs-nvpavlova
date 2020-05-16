@@ -6,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: white;
+    margin-bottom: 100px;
 }
 .nav-menu{
     background-color: rgb(0, 83, 0);
@@ -14,22 +15,22 @@ body{
     text-align: right;
     position: fixed;
     padding-top: 30px;
-}
-a{
+  }
+.nav-menu > a{
     text-decoration: none;
     color: white;
     margin-right: 50px;
-    font-size: 25px;
+    font-size: 1.7rem;
     font-family: 'Playfair Display SC', serif;
-}
-a:hover,
-  :active,
-   :focus{
-    font-size: 35px;
-}
+  }
+.nav-menu > a:hover,
+:active,
+:focus{
+    color: black;
+  }
 h1{
     font-family: 'Playfair Display SC', serif;
-    font-size: 50px;
+    font-size: 3rem;
     color: rgb(73, 73, 73);
     text-align: center;
     padding-top: 130px;
@@ -43,14 +44,14 @@ img{
 caption{
     text-align: center;
     color: rgb(73, 73, 73);
-    font-size: 45px;
+    font-size: 2.8rem;
     font-family: 'Playfair Display SC', serif;
     padding-top: 30px;
     margin-bottom: 20px;
 }
 table{
     color: rgb(29, 27, 27);
-    font-size: 20px;
+    font-size: 1.3rem;
     font-family: 'Playfair Display SC', serif;
     font-weight: 600;
     border-collapse: collapse;
@@ -69,7 +70,7 @@ footer{
     margin-top: 100px;
 	bottom: 0;
 	width: 100%;
-    border-top: 1px solidrgb(73, 73, 73);;
+    border-top: 1px solid rgb(73, 73, 73);;
     padding: 20px 0 10px;
     background-color: #4d4d4d; 
     color: white;
@@ -87,6 +88,6 @@ footer{
   }
 @media screen and (max-width: 1156px) {
     h1{
-      font-size: 45px;
+      font-size: 2.7rem;
     }
 }

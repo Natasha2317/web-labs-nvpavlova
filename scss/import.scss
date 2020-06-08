@@ -1,0 +1,13 @@
+$my_font : 'Playfair Display SC';
+$color_brown: rgb(73, 73, 73);
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    margin-bottom: 100px;
+    font-family: $my_font;
+}

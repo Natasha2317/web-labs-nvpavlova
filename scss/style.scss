@@ -1,0 +1,165 @@
+@import "import.scss";
+
+%center{
+    text-align: center;
+}
+%center2{
+    &+div {
+        text-align: center;
+    }
+}
+@mixin font_size($f){
+    font-size: $f;
+}
+$gradient: (start: rgb(0, 83, 0),finish: rgb(45, 112, 45));
+
+.nav-menu{
+    background: linear-gradient(to bottom, map-get($gradient, start) 30%, map-get($gradient, finish));    
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    position: fixed;
+    padding-top: 30px;
+  }
+.nav-menu{
+     a{
+        text-decoration: none;
+        color: white;
+        margin-right: 50px;
+        @include font_size(1.7rem);
+        font-family: $my_font, serif;
+     }
+}
+.nav-menu {
+    a:hover,
+    :active,
+    :focus{
+        color: black;
+    }
+}
+h1{
+    @include font_size(3rem);
+    color: $color_brown;
+    padding-top: 130px;
+    @extend %center;
+}
+h2{
+    @extend %center;
+    @include font_size(2.8rem);
+    padding-top: 30px;
+}
+.product-list {
+    background: #e9e9e9cc;
+    text-align: left;
+    padding: 20px;
+    width: 280px;
+  }
+.box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .guitar{
+        width: 660px / 1440px * 100%;
+        height: 500px;
+        margin: 0 0 10px 50px;
+    }
+    .product-item {
+        @extend %center2;
+        margin: 50px 0 10px 50px;
+        background: rgb(255, 255, 255);
+        height: 900px;
+    }
+}
+
+  .product-list h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: $color_brown;
+    margin: 0 0 10px 10px;
+  }
+  .price {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #026623;
+    display: block;
+    margin: 0 0 12px 20px;
+  }
+  .button {
+    text-decoration: none;
+    padding: 0 15px;
+    background: #747373;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Playfair Display SC', serif;
+    &:focus{
+        font-size: 1.5rem;
+        width: 120px;
+        height: 50px;
+    }
+    .product-item:hover &{
+        background-color: darken(#449b61,10%);
+        font-size: 1.3rem;
+    }
+}
+img{
+    width: 800px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+caption{
+    @extend %center;
+    color: $color_brown;
+    font-size: 2.8rem;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+table{
+    color: rgb(29, 27, 27);
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-collapse: collapse;
+    width: 90%;
+    @extend %center;
+    display: block;
+    margin: 20px auto;
+}
+td, th{
+    color: rgb(34, 34, 34);
+    border: 4px solid rgb(34, 34, 34);
+    padding: 8px;
+}
+footer{
+    position: fixed;
+    margin-top: 100px;
+	bottom: 0;
+	width: 100%;
+    border-top: 1px solid $color_brown;
+    padding: 20px 0 10px;
+    background-color: $color_brown;
+    color: white;
+    >p{
+        color: lightblue;
+    }
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+    .box{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    h1{
+      font-size: 2.7rem;
+    }
+}

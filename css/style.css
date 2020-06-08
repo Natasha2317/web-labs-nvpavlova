@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  margin-bottom: 100px;
+  font-family: "Playfair Display SC"; }
+
+h1, h2, caption, table {
+  text-align: center; }
+
+.box .product-item + div {
+  text-align: center; }
+
+.nav-menu {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #005300), to(#2d702d));
+  background: -webkit-linear-gradient(top, #005300 30%, #2d702d);
+  background: -o-linear-gradient(top, #005300 30%, #2d702d);
+  background: linear-gradient(to bottom, #005300 30%, #2d702d);
+  width: 100%;
+  height: 60px;
+  text-align: right;
+  position: fixed;
+  padding-top: 30px; }
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+  font-size: 1.7rem;
+  font-family: "Playfair Display SC", serif; }
+
+.nav-menu a:hover,
+.nav-menu :active,
+.nav-menu :focus {
+  color: black; }
+
+h1 {
+  font-size: 3rem;
+  color: #494949;
+  padding-top: 130px; }
+
+h2 {
+  font-size: 2.8rem;
+  padding-top: 30px; }
+
+.product-list {
+  background: #e9e9e9cc;
+  text-align: left;
+  padding: 20px;
+  width: 280px; }
+
+.box {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .box .guitar {
+    width: 45.83333%;
+    height: 500px;
+    margin: 0 0 10px 50px; }
+  .box .product-item {
+    margin: 50px 0 10px 50px;
+    background: white;
+    height: 900px; }
+
+.product-list h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #494949;
+  margin: 0 0 10px 10px; }
+
+.price {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #026623;
+  display: block;
+  margin: 0 0 12px 20px; }
+
+.button {
+  text-decoration: none;
+  padding: 0 15px;
+  background: #747373;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: 'Playfair Display SC', serif; }
+  .button:focus {
+    font-size: 1.5rem;
+    width: 120px;
+    height: 50px; }
+  .product-item:hover .button {
+    background-color: #34784b;
+    font-size: 1.3rem; }
+
+img {
+  width: 800px;
+  height: 400px;
+  display: block;
+  margin: 0 auto; }
+
+caption {
+  color: #494949;
+  font-size: 2.8rem;
+  padding-top: 30px;
+  margin-bottom: 20px; }
+
+table {
+  color: #1d1b1b;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-collapse: collapse;
+  width: 90%;
+  display: block;
+  margin: 20px auto; }
+
+td, th {
+  color: #222222;
+  border: 4px solid #222222;
+  padding: 8px; }
+
+footer {
+  position: fixed;
+  margin-top: 100px;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #494949;
+  padding: 20px 0 10px;
+  background-color: #494949;
+  color: white; }
+  footer > p {
+    color: lightblue; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
+  h1 {
+    font-size: 2.7rem; } }
